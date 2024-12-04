@@ -1,4 +1,6 @@
-public class OrderDetail extends Order {
+import repository.Utils;
+
+public class OrderDetail {
   private Integer id;
   private String quantity;
   private String priceAtOrder;
@@ -30,13 +32,11 @@ public class OrderDetail extends Order {
     return ordersId;
   }
 
-  @Override
-  public void printOrder() {
-    super.printOrder();
-    System.out.println("Order Detail ID: " + id);
-    System.out.println("Product ID    : " + productsId);
-    System.out.println("Quantity      : " + quantity);
-    System.out.println("Price At Order: " + priceAtOrder);
-    System.out.println("Is Returned: " + isReturned);
+  public void printOrderDetails() {
+    System.out.println("Order Detail ID : " + id);
+    System.out.println("Product ID      : " + productsId);
+    System.out.println("Quantity        : " + quantity);
+    System.out.println("Price At Order  : " + Utils.currencyFormat(priceAtOrder));
+    System.out.println("Is Returned     : " + isReturned);
   }
 }

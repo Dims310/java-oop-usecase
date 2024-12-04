@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Order implements OrderInterface {
+public class Order {
   private String id;
   private String location;
   private String expiredAt; 
@@ -51,14 +51,14 @@ public class Order implements OrderInterface {
   }
 
   public void printOrder() {
-    System.out.println("Order ID      : " + id);
-    System.out.println("Location     : " + location);
-    System.out.println("Expired At   : " + expiredAt);
-    System.out.println("Created At   : " + createdAt);
-    System.out.println("Updated At   : " + updatedAt);
-    System.out.println("User ID      : " + userId);
-    System.out.println("Payment ID   : " + paymentId);
-    System.out.println("Order Status : " + orderStatusId);
-    System.out.println("Courier ID   : " + courierId);
-}
+    System.out.println("Order ID        : " + id);
+    System.out.println("Location        : " + location);
+    System.out.println("Expired At      : " + expiredAt);
+    System.out.println("Created At      : " + createdAt);
+    System.out.println("Updated At      : " + updatedAt);
+    System.out.println("User ID         : " + userId);
+    System.out.println("Payment ID      : " + paymentId);
+    System.out.println("Order Status    : " + orderStatusId);
+    System.out.println("Courier ID      : " + courierId);
+  }
 }

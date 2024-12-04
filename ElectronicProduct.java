@@ -1,17 +1,11 @@
 public class ElectronicProduct extends Product {
   private String powerConsumption;
 
-  public ElectronicProduct(
-    String id, 
-    String name, 
-    String price, 
-    String description, 
-    String stock, 
-    String status, 
-    String categoryId, 
-    String powerConsumption
-  ) {
-    super(id, name, price, description, stock, status, categoryId);
+  public String getPowerConsumption() {
+    return powerConsumption;
+  }
+
+  public void setPowerConsumption(String powerConsumption) {
     this.powerConsumption = powerConsumption;
   }
 
@@ -19,5 +13,10 @@ public class ElectronicProduct extends Product {
   protected void printProduct() {
     super.printProduct();
     System.out.printf("Power Consumption: %s\n", powerConsumption);
+  }
+
+  @Override
+  public String getSpecificDetails() {
+    return "Power Consumption: " + powerConsumption;
   }
 }
