@@ -10,13 +10,13 @@ public class ElectronicProduct extends Product {
   }
 
   @Override
-  protected void printProduct() {
-    super.printProduct();
-    System.out.printf("Power Consumption: %s\n", powerConsumption);
-  }
-
-  @Override
   public String getSpecificDetails() {
     return "Power Consumption: " + powerConsumption;
   }
+
+  // @Override
+  // protected void printProduct() {
+  //   super.printProduct();
+  //   System.out.printf("Power Consumption: %s\n", powerConsumption);
+  // }
 }

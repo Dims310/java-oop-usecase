@@ -32,9 +32,9 @@ public class HouseholdProduct extends Product {
     return "Dimension: " + dimensions + "\nWeight: " + weight + "\nMaterial: " + material;
   }
 
-  @Override
-  protected void printProduct() {
-    super.printProduct();
-    System.out.printf("Dimensions: %s\nWeight: %s\nMaterial: %s\n", dimensions, weight, material);
-  }
+  // @Override
+  // protected void printProduct() {
+  //   super.printProduct();
+  //   System.out.printf("Dimensions: %s\nWeight: %s\nMaterial: %s\n", dimensions, weight, material);
+  // }
 }
