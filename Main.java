@@ -150,6 +150,7 @@ public class Main {
         for (HouseholdProduct v : hhProducts) {
           if (v != null) {
             v.printProduct();
+            System.out.println(v.getSpecificDetails());
           }
         }
         break;
@@ -157,12 +158,14 @@ public class Main {
         for (ElectronicProduct v : eProducts) {
           if (v != null) {
             v.printProduct();
+            System.out.println(v.getSpecificDetails());
           }
         }
       case 4:
         for (HealthProduct v : hProducts) {
           if (v != null) {
             v.printProduct();
+            System.out.println(v.getSpecificDetails());
           }
         }
       default:
